@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import NotFound from './pages/NotFound'
 import MasterPage from './masterpage'
+import Contact from './pages/Contact'
 
 const routes = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const routes = createBrowserRouter([
   {
     path: "project",
     element: <Projects />
+  },
+  {
+    path: "contact",
+    element: <Contact />
   },
   {
     path: "*",
