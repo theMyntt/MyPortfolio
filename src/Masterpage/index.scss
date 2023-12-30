@@ -1,0 +1,33 @@
+.flex {
+    display: flex;
+}
+
+.alCenter {
+    align-items: center;
+}
+
+.brand-nav nav ul {
+    list-style-type: none;
+}
+.brand-nav nav ul li {
+    margin: 0 20px;
+}
+.brand-nav nav ul li:last-child {
+    margin: 0 0 0 20px;
+}
+
+.header {
+    height: 70px;
+    justify-content: space-between;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #00f
+}
