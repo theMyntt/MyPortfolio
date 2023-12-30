@@ -9,7 +9,7 @@ export default function NotFound() {
   return (
     <div className="ops">
       <div>
-        <h1>Ops... não consegui encontrar essa página!</h1>
+        <h1>Ops... não consegui encontrar essa página! Erro 404</h1>
         <p>
           Estou trabalhando para que sua experiencia seja a melhor possível,
           sinto muito não encontrar o que desejava...
