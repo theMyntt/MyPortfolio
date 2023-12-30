@@ -2,14 +2,15 @@
   height: 50vh;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to right, #6a994e, #a7c957);
+  background: linear-gradient(to right, #4d6a3b, #a7c957);
   flex-direction: column;
   border-radius: 20px;
   padding: 0 30px;
 }
 
-.brand button {
-  height: 40px;
+.brand button,
+.btn {
+  height: 50px;
   width: 25%;
   border: 0;
   background-color: #000;
@@ -28,7 +29,7 @@
 
 #aboutMe {
   height: auto;
-  background: linear-gradient(to right, #D9ED92, #34A0A4);
+  background: linear-gradient(to right, #d9ed92, #34a0a4);
   border-radius: 20px;
   padding: 40px;
   display: flex;
@@ -37,16 +38,30 @@
   color: #000;
 }
 
-#firstAboutMe {
-  margin-right: 40px;
+#skills {
+  height: auto;
+  background: linear-gradient(to right, #023047, #219ebc);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+#firstAboutMe, #text-skills {
   text-align: justify;
   text-justify: inter-word;
+}
+
+#firstAboutMe {
+  margin-right: 40px;
 }
 
 #aboutMe div img {
   height: 40vh;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   width: auto;
 }
 
@@ -69,11 +84,20 @@
     height: auto;
     padding: 40px;
   }
-  .brand button {
-    width: 100%;
-    height: 50px
-  }
   .container {
     margin-top: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media (max-width: 1137px) {
+  .brand button,
+  .btn {
+    width: 100%;
   }
 }
