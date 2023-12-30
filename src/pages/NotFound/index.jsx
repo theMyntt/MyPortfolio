@@ -7,7 +7,7 @@ function back() {
 
 export default function NotFound() {
   return (
-    <div className="ops">
+    <div className="ops container">
       <div>
         <h1>Ops... não consegui encontrar essa página! Erro 404</h1>
         <p>

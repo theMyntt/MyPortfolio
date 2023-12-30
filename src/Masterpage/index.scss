@@ -38,5 +38,10 @@ a:hover {
     }
     .header {
         justify-content: center;
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 }

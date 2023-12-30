@@ -8,7 +8,7 @@ function toAbout() {
 
 export default function Home() {
   return (
-    <div>
+    <div className="container">
       <div className="brand">
         <h1 id="brand-text">
           Eleve o nível de sua empresa com um desenvolvedor profissional.
@@ -18,7 +18,7 @@ export default function Home() {
         </p>
         <button onClick={toAbout}>Conheça meus projetos.</button>
       </div>
-      <div className="container">
+      <div className="other">
         <div id="aboutMe">
           <div id="firstAboutMe">
             <h2>Meu nome? Gabriel Araújo Lima, prazer.</h2> <br />
