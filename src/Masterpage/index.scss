@@ -31,3 +31,12 @@ a {
 a:hover {
     color: #00f
 }
+
+@media (max-width: 768px) {
+    #logo {
+        display: none;
+    }
+    .header {
+        justify-content: center;
+    }
+}
