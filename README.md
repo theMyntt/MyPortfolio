@@ -1,8 +1,24 @@
-# React + Vite
+# Meu Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Componentes
+- Design Responsivo
+- Rotas (React Router)
 
-Currently, two official plugins are available:
+## Seções
+- Tela de Inicio
+- Tela de Projetos
+- Tela de Contato
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Ferramentas
+- Vite
+- ReactJS
+- react-router-dom
+- sass/scss
+
+## Contribuições
+1. Faça um fork deste repositório
+2. Comece a editar os arquivos
+3. Envie de seu repositório local para em um na nuvem
+
+## Licença
+Este código está sobre a [Licença MIT](https://github.com/theMyntt/MyPortfolio/blob/main/LICENSE)
