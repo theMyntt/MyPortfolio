@@ -7,7 +7,7 @@ import "./main.scss"
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import NotFound from './pages/NotFound'
-import MasterPage from './masterpage'
+import MasterPage from './pages/Masterpage'
 import Contact from './pages/Contact'
 
 const routes = createBrowserRouter([
