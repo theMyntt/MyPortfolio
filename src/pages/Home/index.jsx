@@ -11,7 +11,7 @@ function toContact() {
 }
 
 function toCurriculum() {
-  return window.location.href = "Curriculo.pdf";
+  return window.location.href = "https://drive.google.com/file/d/1VyYzAlm1i8H6AtbSx03Iqh8iQjgWJ_Ap/view?usp=sharing";
 }
 
 export default function Home() {
