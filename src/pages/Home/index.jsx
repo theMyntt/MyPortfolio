@@ -15,7 +15,7 @@ function toCurriculum() {
 }
 
 export default function Home() {
-  const frases = ["empresa", "startup", "projeto"];
+  const frases = ["sua empresa", "sua startup", "seu projeto"];
   const [indice, setIndice] = useState(0);
   const [fraseAtual, setFraseAtual] = useState(frases[indice]);
 
@@ -39,14 +39,14 @@ export default function Home() {
       <br /> <br />
       <div className="brand">
         <h1 id="brand-text">
-          Suba o nível de sua <span id="change">{fraseAtual}</span> com um desenvolvedor
+          Suba o nível de <span id="change">{fraseAtual}</span> com um desenvolvedor
           profissional.
         </h1>{" "}
         <br />
         <p>
           Com um desenvolvedor front-end de qualidade, nada pode dar errado.
         </p>
-        <button onClick={toProject}>Conheça meus projetos.</button>
+        <button onClick={toProject}>Conheça meus projetos</button>
       </div>
       <div className="other">
         <div id="aboutMe">
@@ -69,7 +69,7 @@ export default function Home() {
                 , estou no segundo ano de muito aprendizado!
               </p>
             </article>
-            <button className="btn" onClick={toCurriculum}>De uma olhada em meu Currículo</button>
+            <button className="btn" onClick={toCurriculum}>Meu Currículo</button>
             <p>Talvez seja necessario o uso do Adobe Acrobat.</p>
           </div>
           <div>
