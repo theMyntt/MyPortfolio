@@ -1,0 +1,20 @@
+.brand-container {
+  height: auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #6c5a49;
+  flex-direction: column;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.btn-proj {
+    width: 100%;
+    border: 0;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    color: #000;
+    cursor: pointer;
+}
