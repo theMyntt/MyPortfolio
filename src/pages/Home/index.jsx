@@ -70,7 +70,7 @@ export default function Home() {
               </p>
             </article>
             <button className="btn" onClick={toCurriculum}>Meu Currículo</button>
-            <p>Talvez seja necessario o uso do Adobe Acrobat.</p>
+            <p id="minusImportant">Talvez seja necessario o uso do Adobe Acrobat.</p>
           </div>
           <div>
             <img src={me} alt="Eu" />

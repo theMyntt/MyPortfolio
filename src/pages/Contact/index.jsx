@@ -14,8 +14,8 @@ export default function Contact() {
         <article>
           <p>Achou meu perfil interessante? Aqui abaixo deixarei minhas principais formas de contato!</p> <br />
           <ul>
-            <li>Email: gabriel.araujo2902@outlook.com</li>
-            <li>Telefone e Whatsapp: +55 (11) 99204-6942</li>
+            <li>Email: <br/> gabriel.araujo2902@outlook.com</li>
+            <li>Telefone e Whatsapp: <br /> +55 (11) 99204-6942</li>
           </ul>
         </article> <br />
         <div>

@@ -8,6 +8,10 @@
   padding: 0 30px;
 }
 
+#minusImportant {
+  font-size: 12px;    
+}
+
 .brand button,
 .btn {
   height: 50px;
@@ -51,7 +55,7 @@
 
 #interest {
   height: auto;
-  background: linear-gradient(to right, #271f30, #c8ad55);
+  background: linear-gradient(to right, #00008b, #4169e1);
   border-radius: 20px;
   padding: 40px;
   display: flex;

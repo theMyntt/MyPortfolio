@@ -12,17 +12,17 @@ export default function Projects() {
         <h2>Algum dos meu projetos mais recentes</h2>
         <ul>
           <li>
-            <b>basicT: </b>Programa de Ponto de Vendas. Inclui sistemas de
+            <a href="https://github.com/theMyntt/basicT" className="white"><b>basicT: </b>Programa de Ponto de Vendas. Inclui sistemas de
             venda, login, cadastro de usuários, deletar usuários, histórico de
-            vendas e histórico de login.
+            vendas e histórico de login.</a>
           </li>
           <li>
-            <b>TS_Calculator: </b>Uma calculadora convencional desenvolvida com
-            TypeScript
+            <a href="https://github.com/theMyntt/TS_Calculator" className="white"><b>TS_Calculator: </b>Uma calculadora convencional desenvolvida com
+            TypeScript</a>
           </li>
           <li>
-            <b>Manage++ (Antigo SeachPlus): </b>Sistema controle de
-            funcionarios, cliente, voluntários.
+            <a href="https://github.com/theMyntt/SearchPlus" className="white"><b>Manage++ (Antigo SeachPlus): </b>Sistema controle de
+            funcionarios, cliente, voluntários.</a>
           </li>
         </ul>
         <button className="btn-proj" onClick={toGit}>
