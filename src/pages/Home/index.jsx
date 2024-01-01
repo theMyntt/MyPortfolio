@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./index.scss";
 import me from "../../img/me.jpeg";
 
@@ -10,18 +10,42 @@ function toContact() {
   return (window.location.href = "./contact");
 }
 
+function toCurriculum() {
+  return window.location.href = "Curriculo.pdf";
+}
+
 export default function Home() {
+  const frases = ["empresa", "startup", "projeto"];
+  const [indice, setIndice] = useState(0);
+  const [fraseAtual, setFraseAtual] = useState(frases[indice]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const novoIndice = (indice + 1) % frases.length;
+      setIndice(novoIndice);
+      setFraseAtual(frases[novoIndice]);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [indice, frases])
+
   return (
     <div className="container">
-      <center className="mobile-only"><h2>Olá, meu nome é <h1>Gabriel</h1> e é um prazer ter-lo aqui.</h2> </center> <br /> <br /> 
+      <center className="mobile-only">
+        <h2>
+          Olá, meu nome é <h1>Gabriel</h1> e é um prazer ter-lo aqui.
+        </h2>{" "}
+      </center>{" "}
+      <br /> <br />
       <div className="brand">
         <h1 id="brand-text">
-          Suba o nível de sua empresa com um desenvolvedor profissional.
-        </h1> <br />
+          Suba o nível de sua <span id="change">{fraseAtual}</span> com um desenvolvedor
+          profissional.
+        </h1>{" "}
+        <br />
         <p>
           Com um desenvolvedor front-end de qualidade, nada pode dar errado.
         </p>
-
         <button onClick={toProject}>Conheça meus projetos.</button>
       </div>
       <div className="other">
@@ -45,9 +69,7 @@ export default function Home() {
                 , estou no segundo ano de muito aprendizado!
               </p>
             </article>
-            <button onClick={toContact} className="btn">
-              Que tal falar comigo?
-            </button>
+            <button className="btn" onClick={toCurriculum}>De uma olhada em meu Currículo</button>
           </div>
           <div>
             <img src={me} alt="Eu" />
@@ -63,12 +85,20 @@ export default function Home() {
                 React, PHP, Express e Javascript mas, felizmente tem mais, como
                 HTML, CSS, SCSS/SASS, C++ e SQL. Inclusive, este website foi
                 feito completamente com Vite + React e SASS
-              </p> <br />
+              </p>{" "}
+              <br />
               <p>
-                Sou uma pessoa extremamente auto ditada, gosto de estudar por si só. Me adapto facil a ambiente e sistemas novos. Quando começo fazer algo, sempre tento fazer o mais perfeito o possível.
+                Sou uma pessoa extremamente auto ditada, gosto de estudar por si
+                só. Me adapto facil a ambiente e sistemas novos. Quando começo
+                fazer algo, sempre tento fazer o mais perfeito o possível.
               </p>
             </article>
           </div>
+        </div> <br /> <br />
+        <div id="interest">
+          <h2>Se interessou?</h2>
+          <p>Me mande o e-mail, entre em contato comigo!</p>
+          <button className="btn" onClick={toContact}>Fale comigo</button>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@
 .brand button,
 .btn {
   height: 50px;
-  width: 25%;
+  width:100%;
   border: 0;
   background-color: #000;
   color: #fff;
@@ -49,6 +49,17 @@
   color: #fff;
 }
 
+#interest {
+  height: auto;
+  background: linear-gradient(to right, #271f30, #c8ad55);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
 #firstAboutMe, #text-skills {
   text-align: justify;
   text-justify: inter-word;
@@ -63,6 +74,10 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   width: auto;
+}
+
+#change {
+  color: #00ff73;
 }
 
 @media (max-width: 768px) {
@@ -92,12 +107,5 @@
 @media (min-width: 768px) {
   .mobile-only {
     display: none;
-  }
-}
-
-@media (max-width: 1137px) {
-  .brand button,
-  .btn {
-    width: 100%;
   }
 }
