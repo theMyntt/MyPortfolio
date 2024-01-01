@@ -1,0 +1,39 @@
+.brand-card {
+    height: auto;
+    width: 100%;
+    background-color: #271f30;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    color: #fff
+}
+
+label {
+    display: grid;
+}
+
+input {
+    height: 50px;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    background: inherit;
+    color: #fff;
+    padding: 0 20px;
+    // border-radius: 10px;
+}
+
+input:focus {
+    outline: none
+}
+
+button {
+    height: 50px;
+    border: 0;
+    border-radius: 15px;
+    color: #000;
+    background-color: #fff;
+    width: 100%;
+    margin: 20px 0 0 0
+}
