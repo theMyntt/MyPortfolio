@@ -21,7 +21,7 @@ export default function Contact() {
         <div>
           <h2>Me mande uma mensagem no WhatsApp</h2>
           <form onSubmit={toWhatsapp}>
-            <label>Insira seu nome:<input type="text" id="name" placeholder="Digite seu nome aqui!"/></label>
+            <label>Insira seu nome:<input type="text" id="name" placeholder="Digite seu nome aqui!" required/></label>
             <button type="submit">Enviar</button>
           </form>
         </div>
