@@ -80,6 +80,9 @@
   .proj-card:last-child {
     margin: 0;
   }
+  .proj-card.proj-card.expand {
+    max-height: 1000px;
+  }
   // .proj-card:hover {
   //   height: 700px;
   // }
