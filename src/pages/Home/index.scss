@@ -80,6 +80,17 @@
   width: auto;
 }
 
+#alem {
+  height: auto;
+  background: linear-gradient(to right, #020412, #6a040f);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
 #change {
   color: #fff;
 }

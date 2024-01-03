@@ -24,7 +24,7 @@ export default function Home() {
       const novoIndice = (indice + 1) % frases.length;
       setIndice(novoIndice);
       setFraseAtual(frases[novoIndice]);
-    }, 4000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [indice, frases])
@@ -96,12 +96,28 @@ export default function Home() {
             </article>
           </div>
         </div> <br /> <br />
+        <div id="alem">
+          <div id="text-alem">
+            <h2>Além disso...</h2> <br />
+            <article>
+              <p>
+                Cursei excel básico pela Escola SENAI, atualmente consigo facilmente fazer a manutenção de planilhas, inserção de dados, exclusão, alteração e a utilização de formulas.
+                <br /> <br />
+                Sou uma pessoa moldavel, consigo desde atender clientes, até construir um programa/sistema completo para sua empresa.
+                <br /> <br />
+                Além de ter facilidade em serviços não manuais, tenho a tambem em serviços manuais. Sou uma pessoa lógica, entendo facilmente como faz determinado serviço. 
+              </p>
+            </article>
+          </div>
+        </div> <br /> <br />
         <div id="interest">
-          <h2>Se interessou?</h2>
+          <h2>Se interessou?</h2> <br />
           <p>Me mande o e-mail, entre em contato comigo!</p>
           <button className="btn" onClick={toContact}>Fale comigo</button>
         </div>
       </div>
+      <br />
+      <h2>Obrigado pela sua atenção!</h2> <br />
     </div>
   );
 }
