@@ -28,7 +28,7 @@ export default function Projects() {
           <tr>
             <td>3</td>
             <td>Manage++</td>
-            <td><a href="https://github.com/theMyntt/Manage++">Link para o repositório</a></td>
+            <td><a href="https://github.com/theMyntt/ManagePP">Link para o repositório</a></td>
             <td>N/D</td>
           </tr>
           <tr>
