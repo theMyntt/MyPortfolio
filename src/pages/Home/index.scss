@@ -1,11 +1,12 @@
 .brand {
-  height: 50vh;
+  // height: 50vh;
+  padding: 40px;
   display: flex;
   justify-content: center;
   background: linear-gradient(to right, #4d6a3b, #a7c957);
   flex-direction: column;
   border-radius: 20px;
-  padding: 0 30px;
+  // padding: 0 30px;
 }
 
 #minusImportant {
