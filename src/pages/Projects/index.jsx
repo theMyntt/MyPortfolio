@@ -1,66 +1,109 @@
 import React from "react";
 import "./index.scss";
 
-let i = 0;
-
-function toGit() {
-  return (window.location.href = "https://github.com/theMyntt/");
-}
-
-function seeMore(idElement, idBtn) {
-  const id = document.getElementById(idElement);
-  const btn = document.getElementById(idBtn);
-
-  if (i % 2 == 0){
-    id.classList.add("expand");
-    btn.textContent = "Ver menos";
-  }else{
-    id.classList.remove("expand");
-    btn.textContent = "Ver mais";
-  }
-
-  i++;
-}
-
 export default function Projects() {
   return (
     <div className="container">
       <div className="brand-container">
-        <h2>Meu principais projetos</h2>
-        <div className="proj-card-control">
-          <div className="proj-card card-one" id="card-one">
-            <div className="title">
-              <h2>basicT</h2> 
-              <button className="btn" id="one" onClick={() => seeMore("card-one", "one")}>Ver mais</button>
-            </div>
-            <div className="card-one info1">
-              <article>
-                <h4>Descrição do projeto</h4>
-                <p>O basicT é um sistema PDV (Ponto de Venda) que foi desenvolvido com PHP e SQLite3. No momento, ele ainda está em suas versões inicias, existem muitas coisas para ser adicionadas nele.</p>
-                <p><b>O que é um sistema PDV?</b> são um programa para os operadores de caixa do mercado. A vantagem do basicT é que ele é leve e simples de usar.</p>
-                <a href="https://github.com/theMyntt/basicT"><u>Projeto no GitHub</u></a>
-              </article>
-            </div>
-            
-          </div>
-          <div className="proj-card card-two" id="card-two">
-            <div className="title">
-              <h2>Manage++</h2>
-              <button className="btn" id="two" onClick={() => seeMore("card-two", "two")}>Ver mais</button>
-            </div>
-            <div className="card-two info1">
-              <article>
-                <h4>Descrição do projeto</h4>
-                <article>
-                  <p>Antigo SearchPlus, ele é um sistema de controle de funcionários ou clientes. No atual momento, estou pensando em formas de reconstruir ele do zero. De uma forma mais intuitiva e simples de se usar. Ele também foi desenvolvido com PHP, porém, no Banco de Dados, decidi utilizar MySQL.</p>
-                  <a href="https://github.com/theMyntt/SearchPlus"><u>Projeto no GitHub</u></a>
-                </article>
-              </article>
-            </div>
-          </div>
+        <h2>Meu principais/futuros projetos</h2>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Repositório</th>
+            <th>Deploy/Release</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>MyPortfolio</td>
+            <td><a href="https://github.com/theMyntt/MyPortfolio">Link para o repositório</a></td>
+            <td><a href="https://portfolio-themyntt.netlify.app">Link para deploy</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>basicT</td>
+            <td><a href="https://github.com/theMyntt/basicT">Link para o repositório</a></td>
+            <td><a href="https://github.com/theMyntt/basicT/releases/">Link para a release</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Manage++</td>
+            <td><a href="https://github.com/theMyntt/Manage++">Link para o repositório</a></td>
+            <td>N/D</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Financee</td>
+            <td><a href="https://github.com/theMyntt/Financee">Link para o repositório</a></td>
+            <td>N/D</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>HarmonyWave</td>
+            <td>N/D</td>
+            <td>N/D</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Luxure</td>
+            <td><a href="https://github.com/theMyntt/Luxure">Link para o repositório</a></td>
+            <td>N/D</td>
+          </tr>
+        </table>
+        <button
+          className="btn-proj"
+          onClick={() =>
+            (window.location.href =
+              "https://github.com/theMyntt?tab=repositories")
+          }
+        >
+          Confira todos e muito mais no Github
+        </button>
+      </div>{" "}
+      <br />
+      <div id="alem">
+        <div id="text-alem">
+          <h2>Manage++</h2> <br />
+          <p>
+            Antigo SearchPlus, o Manage++ é um sistema de gerenciamentode
+            empresa com um design totalmente renovado e muitas novas funções.
+            Ele também foi desenvolvido com PHP, porém, no Banco de Dados,
+            decidi utilizar MySQL. <br />
+            <br />
+          </p>
+          <p>
+            Com ele será possível cadastrar,remover, gerenciar pagamento,
+            beneficios de funcionários entre outras funções.
+          </p>
+          <button
+            className="btn-proj"
+            onClick={() =>
+              (window.location.href = "https://github.com/theMyntt/ManagePP")
+            }
+          >
+            Ver mais no Github
+          </button>
         </div>
-        <button className="btn-proj" onClick={toGit}>
-          Confira no GitHub
+      </div>{" "}
+      <br />
+      <div className="brand" style={{ color: "#fff" }}>
+        {/* <div id="brand-text"> */}
+        <h2>basicT</h2> <br />
+        <p>
+          O basicT é um sistema PDV (Ponto de Venda) que foi desenvolvido com
+          PHP e SQLite3. No momento, ele ainda está em suas versões inicias,
+          existem muitas coisas para ser adicionadas nele. <br /> <br />O que é
+          um sistema PDV? são um programa para os operadores de caixa do
+          mercado. A vantagem do basicT é que ele é leve e simples de usar.
+        </p>
+        {/* </div> */}
+        <button
+          className="btn-proj"
+          onClick={() =>
+            (window.location.href = "https://github.com/theMyntt/basicT")
+          }
+        >
+          Ver mais no Github
         </button>
       </div>
     </div>
