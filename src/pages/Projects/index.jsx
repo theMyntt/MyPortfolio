@@ -6,7 +6,7 @@ export default function Projects() {
     <div className="container">
       <div className="brand-container">
         <h2>Meu principais/futuros projetos</h2>
-        <table>
+        <table className="desktop-only">
           <tr>
             <th>ID</th>
             <th>Nome</th>
