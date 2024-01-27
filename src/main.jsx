@@ -1,37 +1,25 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import "./main.scss"
-import Home from './pages/Home'
-import Projects from './pages/Projects'
-import NotFound from './pages/NotFound'
-import MasterPage from './pages/Masterpage'
-import Contact from './pages/Contact'
+import "./main.scss";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import NotFound from "./pages/NotFound";
+import MasterPage from "./pages/Masterpage";
+import Contact from "./pages/Contact";
 
-const routes = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />
-  },
-  {
-    path: "project",
-    element: <Projects />
-  },
-  {
-    path: "contact",
-    element: <Contact />
-  },
-  {
-    path: "*",
-    element: <NotFound />
-  }
-])
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <MasterPage />
-    <RouterProvider router={routes} id="RouterProvider" />
-  </React.StrictMode>,
-)
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="project" element={<Projects />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+);
