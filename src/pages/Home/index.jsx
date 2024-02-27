@@ -2,18 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./index.scss";
 import me from "../../img/me.jpeg";
 
-function toProject() {
-  return (window.location.href = "./project");
-}
-
-function toContact() {
-  return (window.location.href = "./contact");
-}
-
-function toCurriculum() {
-  return window.location.href = "https://drive.google.com/file/d/1VyYzAlm1i8H6AtbSx03Iqh8iQjgWJ_Ap/view?usp=sharing";
-}
-
 export default function Home() {
   const frases = ["sua empresa", "sua startup", "seu projeto"];
   const [indice, setIndice] = useState(0);
@@ -46,7 +34,7 @@ export default function Home() {
         <p>
           Com um desenvolvedor front-end de qualidade, nada pode dar errado.
         </p>
-        <button onClick={toProject}>Conheça meus projetos</button>
+        <button onClick={() => {window.location.href="./project"}}>Conheça meus projetos</button>
       </div>
       <div className="other">
         <div id="aboutMe">
@@ -69,7 +57,7 @@ export default function Home() {
                 , estou no segundo ano de muito aprendizado!
               </p>
             </article>
-            <button className="btn" onClick={toCurriculum}>Meu Currículo</button>
+            <button className="btn" onClick={() => {window.location.href = "https://drive.google.com/file/d/1VyYzAlm1i8H6AtbSx03Iqh8iQjgWJ_Ap/view?usp=sharing";}}>Meu Currículo</button>
             <p id="minusImportant">Talvez seja necessario o uso do Adobe Acrobat.</p>
           </div>
           <div>
@@ -113,7 +101,7 @@ export default function Home() {
         <div id="interest">
           <h2>Se interessou?</h2> <br />
           <p>Me mande o e-mail, entre em contato comigo!</p>
-          <button className="btn" onClick={toContact}>Fale comigo</button>
+          <button className="btn" onClick={() => {window.location.href = "./contact"}}>Fale comigo</button>
         </div>
       </div>
       <br />
