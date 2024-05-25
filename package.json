@@ -1,6 +1,7 @@
 {
   "name": "my-portfolio",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": "Gabriel Araújo Lima <gabriel.araujo2902@outlook.com>",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^17.3.0",
     "@angular/common": "^17.3.0",
