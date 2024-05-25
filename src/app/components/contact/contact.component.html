@@ -3,6 +3,18 @@
     <app-header></app-header>
   </div>
   <div class="contact-container container">
-
+    <form (submit)="sendMessage()">
+      <h2>Whatsapp Message</h2>
+      <label>
+        Name:
+        <input type="text" placeholder="Whats your name?" (keyup)="setName($event)"/>
+      </label> <br/>
+      <app-button text="Send" (click)="sendMessage()" variant="secondary" style="width: 100%;"/>
+    </form>
+    <br />
+    <a href="mailto:gabriel.araujo2902@outlook.com">Send me an email.</a>
+    <br />
+    <br />
+    <app-button text="Go Back" (click)="goBack()"/>
   </div>
 </div>
