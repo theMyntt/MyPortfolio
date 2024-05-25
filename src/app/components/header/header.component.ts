@@ -6,7 +6,14 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <div class="header">
-      
+      <div class="brand-logo">
+        <h2>araujo.dev</h2>
+      </div>
+      <div class="hyper-links">
+        <a href="about">projects</a>
+        <a href="experience">experience</a>
+        <a href="contact">contact</a>
+      </div>
     </div>
   `,
   styleUrl: './header.component.sass'

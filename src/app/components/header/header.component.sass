@@ -1,0 +1,40 @@
+.header
+  padding: 40px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  .brand-logo
+    h2
+      background-color: red
+      background-image: linear-gradient(45deg,#b9b574, #af4261)
+      background-size: 100%
+      background-repeat: repeat
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      -moz-background-clip: text
+      -moz-text-fill-color: transparent
+  .hyper-links
+    display: flex
+    align-items: center
+    justify-content: space-between
+    a
+      font-size: 18px
+      font-weight: 600
+      color: #000
+      text-decoration: none
+      margin-right: 20px
+      transition: 0.3s
+      &:hover
+        color: #f3ec78
+      &:last-child
+        margin-right: 0px !important
+
+@media (max-width: 900px)
+  .header
+    display: block
+    .brand-logo
+      margin-bottom: 20px
+    .hyper-links
+      justify-content: flex-start
+      a
+        margin-right: 10px !important
