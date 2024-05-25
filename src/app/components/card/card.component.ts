@@ -1,12 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   template: `
     <div class="card">
-      <div class="card-image">
+      <div class="card-image" *ngIf="image">
         <img src="assets/img/{{image}}" alt="angular">
       </div>
       <div class="card-content">
