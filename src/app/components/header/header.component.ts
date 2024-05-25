@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
         <h2>araújo.dev</h2>
       </div>
       <div class="hyper-links">
-        <a href="about">projects</a>
+        <a href="https://github.com/theMyntt?tab=repositories">projects</a>
         <a href="experience">experience</a>
         <a href="contact">contact</a>
       </div>
