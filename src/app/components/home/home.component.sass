@@ -1,0 +1,33 @@
+.home-container
+  padding: 40px
+  .brand-hello
+    width: 100%
+    height: calc( 100vh - 196px )
+    display: flex
+    align-items: center
+    justify-content: center
+    .image
+      margin-right: 40px
+    .text
+      text-align: center
+  .skills
+    i
+      font-size: 40px
+      margin-right: 5px
+      &:last-child
+        margin-right: 0
+
+@media (max-width: 900px)
+  .home-container
+    padding: 20px
+    .brand-hello
+      flex-direction: column
+      .image
+        margin-bottom: 10px
+        margin-right: 0 !important
+    .projects
+      flex-direction: column
+
+#me
+  border-radius: 50%
+  width: 260px
