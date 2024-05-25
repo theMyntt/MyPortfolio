@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   template: `
     <div class="header">
       <div class="brand-logo">
-        <h2>araujo.dev</h2>
+        <h2>araújo.dev</h2>
       </div>
       <div class="hyper-links">
         <a href="about">projects</a>
