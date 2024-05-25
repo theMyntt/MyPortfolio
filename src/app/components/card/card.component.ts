@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   template: `
     <div class="card">
       <div class="card-image">
-        <img src="assets/images/{{image}}" alt="angular">
+        <img src="assets/img/{{image}}" alt="angular">
       </div>
       <div class="card-content">
         <h3>{{title}}</h3>
