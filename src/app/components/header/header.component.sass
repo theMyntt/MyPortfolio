@@ -15,14 +15,17 @@
     i
       display: none
     h2
-      background-color: red
-      background-image: linear-gradient(45deg,#b9b574, #af4261)
+      background-color: #b9b574
+      background-image: linear-gradient(to right, #b9b574, #af4261)
       background-size: 100%
       background-repeat: repeat
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
       -moz-background-clip: text
       -moz-text-fill-color: transparent
+
+      @media (min-width: 900px)
+        background-size: 30% 
   .hyper-links
     display: flex
     align-items: center
