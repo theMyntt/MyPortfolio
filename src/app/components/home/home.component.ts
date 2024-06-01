@@ -11,6 +11,12 @@ import { ButtonComponent } from '../button/button.component';
   styleUrl: './home.component.sass'
 })
 export class HomeComponent {
+  show: boolean = true
+
+  constructor() {
+    setTimeout(() => this.show = false, 3000)
+  }
+
   redirect(where: string) {
     location.href = where
   }
