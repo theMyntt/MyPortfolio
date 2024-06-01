@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
         <i class="material-symbols-outlined" (click)="setShow()">menu</i>
       </div>
       <div class="hyper-links">
+        <a href="home" [class.show]="getShow()">home</a>
         <a href="https://github.com/theMyntt?tab=repositories" [class.show]="getShow()">projects</a>
         <a href="experience" [class.show]="getShow()">experience</a>
         <a href="contact" [class.show]="getShow()">contact</a>
