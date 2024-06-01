@@ -7,6 +7,7 @@
   top: 0
   right: 0
   left: 0
+  z-index: 9999
   background-color: white
   .brand-logo
     width: 100%
@@ -49,8 +50,15 @@
         display: block !important
     .hyper-links
       justify-content: flex-start
+      flex-direction: column
+      align-items: baseline
       a
-        margin-right: 10px !important
+        margin-right: 0 !important
+        margin-bottom: 10px !important
         display: none
+        &:first-child
+          margin-top: 10px !important
+        &:last-child
+          margin-bottom: 0 !important
       a.show
         display: block !important
