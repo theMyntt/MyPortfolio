@@ -16,16 +16,15 @@
       display: none
     h2
       background-color: #b9b574
-      background-image: linear-gradient(to right, #b9b574, #af4261)
-      background-size: 100%
+      background-image: linear-gradient(-45deg, #b9b574, #af4261)
+      background-size: 400% 400%
+      animation: gradient 6s ease infinite 
       background-repeat: repeat
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
       -moz-background-clip: text
       -moz-text-fill-color: transparent
 
-      @media (min-width: 900px)
-        background-size: 30% 
   .hyper-links
     display: flex
     align-items: center
@@ -65,3 +64,13 @@
           margin-bottom: 0 !important
       a.show
         display: block !important
+
+@keyframes gradient
+  0%
+    background-position: 0% 50%
+
+  50%
+    background-position: 100% 50%
+
+  100%
+    background-position: 0% 50%
