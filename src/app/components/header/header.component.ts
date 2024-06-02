@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
         <a href="home" [class.show]="getShow()">home</a>
         <a href="https://github.com/theMyntt?tab=repositories" [class.show]="getShow()">projects</a>
         <a href="#timeline" [class.show]="getShow()">experience</a>
-        <a href="contact" [class.show]="getShow()">contact</a>
+        <a href="#contact" [class.show]="getShow()">contact</a>
       </div>
     </div>
   `,

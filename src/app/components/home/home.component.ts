@@ -20,4 +20,22 @@ export class HomeComponent {
   redirect(where: string) {
     location.href = where
   }
+
+  private name: string = ""
+
+  setName(e: any) {
+    this.name = e.target.value;
+  }
+  
+  goBack() {
+    history.back()
+  }
+
+  sendMessage() {
+    if (!this.name) {
+      alert("Please enter your name");
+      return;
+    }
+    window.open("https://wa.me/5511992046942?text=Hi,%20I'm%20" + encodeURIComponent(this.name), "_blank");
+  }
 }

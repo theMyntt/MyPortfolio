@@ -67,5 +67,21 @@
         </li>
       </ul>
     </div>
+    <div class="contact-container" id="contact">
+      <form (submit)="sendMessage()">
+        <h2>Contact me</h2>
+        <p>Send me a WhatsApp message</p>
+        <br />
+        <label>
+          Name:
+          <input type="text" placeholder="Whats your name?" (keyup)="setName($event)"/>
+        </label> <br/>
+        <app-button text="Send" (click)="sendMessage()" variant="secondary" style="width: 100%;"/>
+      </form>
+      <br />
+      <a href="mailto:gabriel.araujo2902@outlook.com">Send me an email.</a>
+      <br />
+      <br />
+    </div>
   </div>
 </div>
