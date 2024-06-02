@@ -48,31 +48,6 @@
   transform-origin: 70% 70%
   display: inline-block
 
-#hello-overlay
-  position: absolute
-  z-index: 1000
-  top: 128px
-  background-color: white
-  width: 100%
-  height: calc(100% - 128px)
-  .content
-    display: flex
-    height: inherit
-    align-items: center
-    justify-content: center
-    flex-direction: column
-    h1
-      margin: 0
-      text-align: center
-      overflow: hidden
-      line-height: 1
-      span
-        display: block
-        animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s
-
-#hello-overlay.false
-  display: none !important
-
 @keyframes wave-animation
   0%
     transform: rotate( 0.0deg)
@@ -90,9 +65,3 @@
     transform: rotate( 0.0deg)
   100%
     transform: rotate( 0.0deg)
-
-@keyframes reveal
-  0%
-    transform: translate(0, 100%)
-  100%
-    transform: translate(0, 0)
