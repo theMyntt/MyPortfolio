@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
       <div class="hyper-links">
         <a href="home" [class.show]="getShow()">home</a>
         <a href="https://github.com/theMyntt?tab=repositories" [class.show]="getShow()">projects</a>
-        <a href="experience" [class.show]="getShow()">experience</a>
+        <a href="#timeline" [class.show]="getShow()">experience</a>
         <a href="contact" [class.show]="getShow()">contact</a>
       </div>
     </div>

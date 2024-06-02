@@ -1,11 +1,3 @@
-<div id="hello-overlay" class="overlay {{this.show}}">
-  <div class="content">
-    <h1 id="first">
-      <span>Welcome to my personal portfólio!</span>
-    </h1>
-    <p>Lets get started?</p>
-  </div>
-</div>
 <div class="app-container">
   <div class="">
     <app-header></app-header>
@@ -48,5 +40,32 @@
     </div>
     <br />
     <app-button [hasIcon]="false" text="See More" variant="secondary" (click)="redirect('https://github.com/theMyntt?tab=repositories')"/>
+    <br />
+    <h2>Experience</h2>
+    <div class="timeline" id="timeline">
+      <ul>
+        <li>
+          <div class="content">
+            <h3>Focus Têxtil</h3>
+            <p>In 2024 I had the opportunity to try to apply for the IT area at Focus Têxtil and was selected. This is my first job.</p>
+          </div>
+          <div class="point"></div>
+          <div class="date">
+            <h4>2024</h4>
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <h3>Secundary School</h3>
+            <p>In 2022, I took the entrance exam for the São Paulo state technical schools for the systems development course. 
+              In 2023 I passed Etec Professor Horácio Augusto da Silveira.</p>
+          </div>
+          <div class="point"></div>
+          <div class="date">
+            <h4>2023</h4>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
